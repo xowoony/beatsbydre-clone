@@ -33,9 +33,7 @@ const Section1 = styled.div`
   }
 `;
 
-const InfoContainer = styled.div`
-  /* margin-left: 12rem; */
-`;
+const InfoContainer = styled.div``;
 
 // 제품 설명
 const Info = styled.div`
@@ -73,7 +71,7 @@ const Info = styled.div`
 
 // Info 2
 const Info2 = styled(Info)`
-  margin: 7rem;
+  margin: 6rem;
   div {
     color: rgb(0, 0, 0);
     font-family: "Montserrat", sans-serif;
@@ -87,7 +85,7 @@ const Info2 = styled(Info)`
     padding: 15px 0 25px 0;
   }
   div:nth-child(3) {
-    font-size: 38px;
+    font-size: 41px;
   }
   div:nth-child(4) {
     color: rgb(0, 0, 0);
@@ -97,8 +95,22 @@ const Info2 = styled(Info)`
   div:nth-child(6) {
     margin-top: 1rem;
     font-size: 13px;
+
+  }
+  div:nth-child(7) {
+    margin-top: 1rem;
     color: #575353;
   }
+`;
+
+// Color Container
+const ColorContainer = styled.div`
+  width: 30rem;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 `;
 
 // BUY NOW Button
@@ -132,7 +144,7 @@ const Section2 = styled(Section1)`
 const Section3 = styled(Section1)`
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  height: 28rem;
+  height: 32rem;
 `;
 
 const BuyButton2 = styled(BuyButton)`
@@ -146,7 +158,46 @@ const BuyButton2 = styled(BuyButton)`
 `;
 
 // section4
-const Section4 = styled(Section1)``;
+const Section4 = styled.div`
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 6rem;
+  margin-bottom: 25rem;
+`;
+
+
+// grid
+const Grid = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 37rem;
+  background-color: #f7f7f9;
+  span:nth-child(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+  }
+  img {
+    width: 12rem;
+    height: 16rem;
+    margin: 1rem;
+  }
+  div{
+    :nth-child(1){
+      font-size: 2rem;
+      color: #000000;
+      font-weight:400;
+    }
+    :nth-child(2) {
+      margin: 1rem 0 1.5rem 0;
+    }
+    }
+  
+`;
 
 function Home() {
   return (
@@ -183,14 +234,48 @@ function Home() {
           <div>Portable Wireless Speaker</div>
           <div>Beats Pill</div>
           <div>Available Colors</div>
-          <div style={{ color: "rgb(0,0,0)" }}>Find your Color</div>
+          <div style={{ color: "rgb(0,0,0)", marginLeft: "7px" }}>
+            Find your Color
+          </div>
+          <ColorContainer>
+            <img
+              src="Oval.png"
+              alt=""
+              style={{
+                width: "2.5rem",
+                height: "2.5rem",
+                marginTop: "1rem",
+                marginRight: "0.7rem",
+              }}
+            />
+            <img
+              src="OvalCopy.png"
+              alt=""
+              style={{
+                width: "2.5rem",
+                height: "2.5rem",
+                marginTop: "1rem",
+                marginRight: "0.7rem",
+              }}
+            />
+            <img
+              src="OvalCopy2.png"
+              alt=""
+              style={{
+                width: "2.5rem",
+                height: "2.5rem",
+                marginTop: "1rem",
+                marginRight: "0.7rem",
+              }}
+            />
+          </ColorContainer>
           <div>
             <span>$299.95</span>
             <span>
               <BuyButton2>BUY NOW</BuyButton2>
             </span>
           </div>
-          <div>
+          <div style={{ fontSize: "14px" }}>
             $60 Apple Music gift card with purchase of select Beats products.*
           </div>
         </Info2>
@@ -198,11 +283,40 @@ function Home() {
           <img
             src="pill.png"
             alt=""
-            style={{ height: "25rem", width: "52rem", marginTop: "7rem" }}
+            style={{
+              height: "25rem",
+              width: "52rem",
+              marginTop: "7rem",
+              marginRight: "2rem",
+            }}
           />
         </div>
       </Section3>
-      <Section4></Section4>
+      {/* section4 */}
+      <Section4>
+        <Grid>
+          <img src="product0.png" alt="" />
+          <div>
+            <div>Beats</div>
+            <div>
+              Up to 8 hours of battery life<br/>With Fast Fuel, a 5-minute charge = 2
+              <br/>hours of playback
+            </div>
+            <div>
+            <span>$299.95</span>
+            <span>
+              <BuyButton2>BUY NOW</BuyButton2>
+            </span>
+          </div>
+          </div>
+          
+        </Grid>
+        <Grid></Grid>
+        <Grid></Grid>
+        <Grid></Grid>
+        <Grid></Grid>
+        <Grid></Grid>
+      </Section4>
       <Footer />
     </Wrapper>
   );
