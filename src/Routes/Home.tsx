@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import Footer from "../Components/Footer";
+import Product from "../Components/Product";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -95,7 +96,6 @@ const Info2 = styled(Info)`
   div:nth-child(6) {
     margin-top: 1rem;
     font-size: 13px;
-
   }
   div:nth-child(7) {
     margin-top: 1rem;
@@ -153,7 +153,7 @@ const BuyButton2 = styled(BuyButton)`
   &:hover {
     color: black;
     border: 0.0625rem solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0%);
   }
 `;
 
@@ -166,37 +166,6 @@ const Section4 = styled.div`
   list-style-type: none;
   margin: 6rem;
   margin-bottom: 25rem;
-`;
-
-
-// grid
-const Grid = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 37rem;
-  background-color: #f7f7f9;
-  span:nth-child(1) {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:600;
-  }
-  img {
-    width: 12rem;
-    height: 16rem;
-    margin: 1rem;
-  }
-  div{
-    :nth-child(1){
-      font-size: 2rem;
-      color: #000000;
-      font-weight:400;
-    }
-    :nth-child(2) {
-      margin: 1rem 0 1.5rem 0;
-    }
-    }
-  
 `;
 
 function Home() {
@@ -227,7 +196,7 @@ function Home() {
         </InfoContainer>
       </Section1>
       {/* section 2 */}
-      <Section2></Section2>
+      <Section2 />
       {/* section 3 */}
       <Section3>
         <Info2>
@@ -294,28 +263,12 @@ function Home() {
       </Section3>
       {/* section4 */}
       <Section4>
-        <Grid>
-          <img src="product0.png" alt="" />
-          <div>
-            <div>Beats</div>
-            <div>
-              Up to 8 hours of battery life<br/>With Fast Fuel, a 5-minute charge = 2
-              <br/>hours of playback
-            </div>
-            <div>
-            <span>$299.95</span>
-            <span>
-              <BuyButton2>BUY NOW</BuyButton2>
-            </span>
-          </div>
-          </div>
-          
-        </Grid>
-        <Grid></Grid>
-        <Grid></Grid>
-        <Grid></Grid>
-        <Grid></Grid>
-        <Grid></Grid>
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
       </Section4>
       <Footer />
     </Wrapper>
