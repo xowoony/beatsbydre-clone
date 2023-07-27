@@ -204,7 +204,7 @@ const SignUpContainer = styled.div`
   input {
     width: 34rem;
     height: 2.8rem;
-    border-radius: 18px;
+    border-radius:22px;
     border: 0.1rem solid #8080806b;
     padding: 0 15px 0 15px;
     font-size: 13.5px;
@@ -217,7 +217,7 @@ const SignUpContainer = styled.div`
   button {
     width: 32rem;
     height: 2.5rem;
-    border-radius: 18px;
+    border-radius: 22px;
     margin-top: 1rem;
     background-color: #ffd109;
     border-style: none;

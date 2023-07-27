@@ -10,7 +10,7 @@ const Nav = styled.nav`
   div {
     color: rgb(159, 159, 159);
     font-size: 13.5px;
-    margin-bottom: 8px;
+    margin-bottom: 9.5px;
     font-weight: 500;
   }
 `;
