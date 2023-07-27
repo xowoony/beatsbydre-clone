@@ -177,7 +177,7 @@ const Section5 = styled.div`
 
   background-color: #f7f7f9;
   height: 22rem;
-  margin: 0 6rem 3rem 6rem;
+  margin: 0 6rem 4rem 6rem;
   div:nth-child(1) {
     font-size: 3rem;
     margin-top: 2rem;
@@ -202,17 +202,16 @@ const SignUpContainer = styled.div`
     justify-content: center;
   }
   input {
-    width: 32rem;
-    height: 2.5rem;
+    width: 34rem;
+    height: 2.8rem;
     border-radius: 18px;
     border: 0.1rem solid #8080806b;
     padding: 0 15px 0 15px;
-    font-size: 13px;
+    font-size: 13.5px;
     color: #7a7a7a6b;
     background-color: transparent;
-    
   }
-  input::placeholder{
+  input::placeholder {
     color: #7a7979a6;
   }
   button {
@@ -338,8 +337,26 @@ function Home() {
         </div>
         <SignUpContainer>
           <form>
-            <input type="text" placeholder="Enter your email" />
-            <button>SIGN UP</button>
+            <label htmlFor="">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                style={{ marginBottom: "1rem" }}
+              />
+              <input
+                type="submit"
+                value="SIGN UP"
+                style={{
+                  borderStyle: "none",
+                  backgroundColor: "rgb(255, 212, 0)",
+                  fontFamily: "Montserrat",
+                  color: "#262634",
+                  fontWeight: "bold",
+                  fontSize: "16px",
+                  cursor:"pointer"
+                }}
+              />
+            </label>
           </form>
         </SignUpContainer>
       </Section5>
