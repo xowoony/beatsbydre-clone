@@ -165,7 +165,67 @@ const Section4 = styled.div`
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   margin: 6rem;
-  margin-bottom: 25rem;
+  margin-bottom: 2.5rem;
+`;
+
+// section5
+const Section5 = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #f7f7f9;
+  height: 22rem;
+  margin: 0 6rem 3rem 6rem;
+  div:nth-child(1) {
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    color: #262634;
+    margin-bottom: 12px;
+  }
+  div:nth-child(2) {
+    font-size: 15px;
+    margin-bottom: 3rem;
+  }
+`;
+
+// signUp
+const SignUpContainer = styled.div`
+  width: 20rem;
+  /* height: 10rem; */
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  input {
+    width: 32rem;
+    height: 2.5rem;
+    border-radius: 18px;
+    border: 0.1rem solid #8080806b;
+    padding: 0 15px 0 15px;
+    font-size: 13px;
+    color: #7a7a7a6b;
+    background-color: transparent;
+    
+  }
+  input::placeholder{
+    color: #7a7979a6;
+  }
+  button {
+    width: 32rem;
+    height: 2.5rem;
+    border-radius: 18px;
+    margin-top: 1rem;
+    background-color: #ffd109;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+  }
 `;
 
 function Home() {
@@ -270,6 +330,19 @@ function Home() {
         <Product />
         <Product />
       </Section4>
+      {/* section5 */}
+      <Section5>
+        <div>Hear it first</div>
+        <div>
+          Get updates on product drops, collaborations and all things Beats.
+        </div>
+        <SignUpContainer>
+          <form>
+            <input type="text" placeholder="Enter your email" />
+            <button>SIGN UP</button>
+          </form>
+        </SignUpContainer>
+      </Section5>
       <Footer />
     </Wrapper>
   );

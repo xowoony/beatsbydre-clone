@@ -1,0 +1,49 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "src": "studio3wireless.png",
+      "type": "image/png",
+      "name":"studio3wireless"
+    },
+    {
+      "id": 2,
+      "src": "studio3wireless.png",
+      "type": "image/png"
+    },
+    {
+      "id": 3,
+      "src": "studio3wireless.png",
+      "type": "image/png"
+    },
+    {
+      "id": 4,
+      "src": "studio3wireless.png",
+      "type": "image/png"
+    },
+    {
+      "id": 5,
+      "src": "studio3wireless.png",
+      "type": "image/png"
+    },
+    {
+      "id": 6,
+      "src": "studio3wireless.png",
+      "type": "image/png"
+    },
+    {
+      "id": 7,
+      "src": "studio3wireless.png",
+      "type": "image/png"
+    }
+  ],
+  "name": [
+    {
+
+  }
+],
+
+  "price": [{}],
+
+  "info": [{}]
+}
